@@ -1,16 +1,9 @@
 # flutter_localization_static
 
-A new Flutter project.
+Flutter version: 2.0.5 (channel stable)
 
-## Getting Started
+Dart SDK version: 2.12.0 (stable)
 
-This project is a starting point for a Flutter application.
+İlgili Makale:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://ahmet-kahrimanoglu.medium.com/10-ad%C4%B1mda-flutterda-lokalizasyon-i%CC%87%C5%9Flemleri-1-%C3%A7oklu-dil-deste%C4%9Fi-ekleme-manuel-3701e3673300
