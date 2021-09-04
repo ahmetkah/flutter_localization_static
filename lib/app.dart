@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'localizations/app_localizations.dart';
-import 'view/settings_view.dart';
+import 'view/onboarding_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -35,10 +35,12 @@ class MyApp extends StatelessWidget {
         /// Cupertino widget kütüphanesi için delegate
         GlobalCupertinoLocalizations.delegate,
       ],
-      localeResolutionCallback: (Locale? locale, Iterable<Locale> supportedLocales) {
+      localeResolutionCallback:
+          (Locale? locale, Iterable<Locale> supportedLocales) {
         /// [locale]: Cihazın dili null değilse
         if (locale != null) {
-          debugPrint("Algılanan cihaz dili: Dil Kodu: ${locale.languageCode}, Ülke Kodu: ${locale.countryCode}");
+          debugPrint(
+              "Algılanan cihaz dili: Dil Kodu: ${locale.languageCode}, Ülke Kodu: ${locale.countryCode}");
           for (var supportedLocale in supportedLocales) {
             /// Cihazın dil kodu desteklenen diller arasındaki dil kodlarının içinde var mı?
             if (supportedLocale.languageCode == locale.languageCode) {
@@ -47,7 +49,8 @@ class MyApp extends StatelessWidget {
             }
           }
         }
-        debugPrint("Algılanan cihaz dili desteklenen diller arasında bulunmuyor.");
+        debugPrint(
+            "Algılanan cihaz dili desteklenen diller arasında bulunmuyor.");
 
         /// [locale]: Cihazın dili null ise
         /// Yoksa [supportedLocales] Listesindeki ilk sonucu döndür.
@@ -55,7 +58,7 @@ class MyApp extends StatelessWidget {
             "Uygulamanın başlatılması istenen dil: Dil Kodu: ${supportedLocales.first.languageCode}, Ülke Kodu: ${supportedLocales.first.countryCode}");
         return supportedLocales.first;
       },
-      home: const SettingsView(),
+      home: const OnBoardingView(),
     );
   }
 }

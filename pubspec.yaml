@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.3
+
+  intro_slider: ^3.0.2
+
   flutter_localizations:
     sdk: flutter
 
@@ -24,3 +27,4 @@ flutter:
   
   assets:
     - assets/languages/
+    - assets/images/
